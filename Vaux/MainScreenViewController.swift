@@ -127,7 +127,6 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         } else if segue.identifier == "showWebPage" {
             let cell = sender as! SongsTableViewCell
             let indexPath = tableView.indexPath(for: cell)!
-            //            let song = songs[indexPath.row]
             let song: SongObject
             if searchController.isActive && searchController.searchBar.text != "" {
                 song = filteredSongs[indexPath.row]

@@ -41,19 +41,13 @@ class EditSongViewController: UIViewController,  UITextFieldDelegate {
     @IBAction func saveChanges(_ sender: AnyObject) {
         
         if (editedSong.text != "") && (editedSong.text != " ") && (editedSong.text != "   ") && (editedSong.text != "    ") {
-            let urlForCheckSavingMode = editedLink.text
-            if ((urlForCheckSavingMode!.containsIgnoringCase(" ")) || (urlForCheckSavingMode!.containsIgnoringCase("  ")) || (urlForCheckSavingMode!.containsIgnoringCase("   ")) == true ){
-                displayAlert("ERROR", message: "Invalid Link")
-                return
-            } else {
                 if let song = inheritedSong {
                     try! realm.write {
                         song.songTitle = editedSong.text ?? ""
                         song.songArtist = editedArtist.text ?? ""
-//                        song.songLink = editedLink.text ?? ""
             }
-            }; performSegue(withIdentifier: "returnToSongsSegue", sender: self)
             }
+                performSegue(withIdentifier: "returnToSongsSegue", sender: self)
             } else {
             displayAlert("ERROR", message: "Song must have a title")
         }
@@ -63,10 +57,6 @@ class EditSongViewController: UIViewController,  UITextFieldDelegate {
         super.viewDidLoad()
         editedSong.text = inheritedSong?.songTitle ?? ""
         editedArtist.text = inheritedSong?.songArtist ?? ""
-//        editedLink.text = inheritedSong?.songLink ?? ""
-//        editLinkSwitch.setOn(false, animated: false)
-        editedLink.isUserInteractionEnabled = false
-        editedLink.textColor = UIColor(red: 225, green: 225, blue: 225, alpha: 0.19)
         
     }
     
