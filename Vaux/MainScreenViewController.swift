@@ -24,16 +24,13 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         }
     }
     
-//    func filterContentForSearchText(searchText: String, scope: String = "All") {
-//        filteredSongs = songs.filter { songs in
-//            return songs.songTitle!.lowercaseString.containsString(searchText.lowercaseString)
-//        }
-//        filteredSongs = songs.filter { songs in
-//            return songs.songArtist!.lowercaseString.containsString(searchText.lowercaseString)
-//        }
-//        
-//        tableView.reloadData()
-//    }
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        filteredSongs = songs.filter ({( songs: SongObject) -> Bool in
+            return songs.songTitle!.lowercased().contains(searchText.lowercased())
+        })
+
+        tableView.reloadData()
+    }
     
     @IBOutlet weak var titleArtsitsSegmentController: UISegmentedControl!
     

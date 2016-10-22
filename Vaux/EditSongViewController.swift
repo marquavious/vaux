@@ -50,7 +50,7 @@ class EditSongViewController: UIViewController,  UITextFieldDelegate {
                     try! realm.write {
                         song.songTitle = editedSong.text ?? ""
                         song.songArtist = editedArtist.text ?? ""
-                        song.songLink = editedLink.text ?? ""
+//                        song.songLink = editedLink.text ?? ""
             }
             }; performSegue(withIdentifier: "returnToSongsSegue", sender: self)
             }
@@ -63,8 +63,8 @@ class EditSongViewController: UIViewController,  UITextFieldDelegate {
         super.viewDidLoad()
         editedSong.text = inheritedSong?.songTitle ?? ""
         editedArtist.text = inheritedSong?.songArtist ?? ""
-        editedLink.text = inheritedSong?.songLink ?? ""
-        editLinkSwitch.setOn(false, animated: false)
+//        editedLink.text = inheritedSong?.songLink ?? ""
+//        editLinkSwitch.setOn(false, animated: false)
         editedLink.isUserInteractionEnabled = false
         editedLink.textColor = UIColor(red: 225, green: 225, blue: 225, alpha: 0.19)
         

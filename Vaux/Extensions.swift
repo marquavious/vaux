@@ -50,10 +50,8 @@ extension UIColor {
 extension MainScreenViewController: UISearchResultsUpdating {
     @available(iOS 8.0, *)
     public func updateSearchResults(for searchController: UISearchController) {
-        func updateSearchResults(for searchController: UISearchController) {
-//            filterContentForSearchText(searchText: searchController.searchBar.text!)
-        }
-        
+        filterContentForSearchText(searchController.searchBar.text!)
+
     }
 
 }

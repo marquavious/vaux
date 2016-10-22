@@ -10,7 +10,7 @@
         <!--Add Song-->
         <scene sceneID="OmE-B2-mM9">
             <objects>
-                <viewController id="z8E-mP-4k1" customClass="AddSong" customModule="beatkeep" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="z8E-mP-4k1" customClass="AddSong" customModule="Vaux" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rzV-0r-IhJ"/>
                         <viewControllerLayoutGuide type="bottom" id="asy-gB-Nh6"/>
@@ -19,15 +19,6 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LINK     :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="new-t4-Gbz">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="nfD-gd-yLl"/>
-                                    <constraint firstAttribute="width" constant="73" id="x2N-sz-YKo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ARTIST NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ga-EM-bs9">
                                 <color key="tintColor" red="0.88235294119999996" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -35,21 +26,6 @@
                                     <constraint firstAttribute="height" constant="30" id="w6r-ko-876"/>
                                 </constraints>
                                 <color key="textColor" red="0.88235294119999996" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="0.19" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="LINK" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="1Ey-pW-cML">
-                                <color key="tintColor" red="0.88235294119999996" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="215" id="BgY-2f-C82"/>
-                                    <constraint firstAttribute="height" constant="29" id="RsP-zR-9bE"/>
-                                </constraints>
-                                <color key="textColor" red="1" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
                                 <userDefinedRuntimeAttributes>
@@ -110,16 +86,11 @@
                             <constraint firstItem="0Y6-DR-77s" firstAttribute="leading" secondItem="0NX-vp-x2I" secondAttribute="trailing" constant="18" id="2IO-1X-eKg"/>
                             <constraint firstItem="GEA-e4-U0T" firstAttribute="leading" secondItem="Vfw-t0-Njo" secondAttribute="leadingMargin" id="55Y-8e-RaR"/>
                             <constraint firstItem="0Y6-DR-77s" firstAttribute="top" secondItem="rzV-0r-IhJ" secondAttribute="bottom" constant="20" id="6sf-pR-Y7l"/>
-                            <constraint firstItem="new-t4-Gbz" firstAttribute="top" secondItem="rzV-0r-IhJ" secondAttribute="bottom" constant="130" id="AaG-vz-ed3"/>
                             <constraint firstItem="GEA-e4-U0T" firstAttribute="top" secondItem="rzV-0r-IhJ" secondAttribute="bottom" constant="75" id="Ay9-sl-lZ5"/>
                             <constraint firstItem="8ga-EM-bs9" firstAttribute="top" secondItem="rzV-0r-IhJ" secondAttribute="bottom" constant="75" id="EFv-RO-00V"/>
                             <constraint firstItem="8ga-EM-bs9" firstAttribute="leading" secondItem="GEA-e4-U0T" secondAttribute="trailing" constant="16" id="IKa-5z-ODl"/>
-                            <constraint firstItem="1Ey-pW-cML" firstAttribute="top" secondItem="rzV-0r-IhJ" secondAttribute="bottom" constant="130" id="O57-kk-UY2"/>
                             <constraint firstItem="1Jo-K7-lkR" firstAttribute="centerX" secondItem="Vfw-t0-Njo" secondAttribute="centerX" id="RAj-BX-gDm"/>
-                            <constraint firstItem="1Ey-pW-cML" firstAttribute="leading" secondItem="new-t4-Gbz" secondAttribute="trailing" constant="18" id="Uk0-9q-PrO"/>
-                            <constraint firstItem="1Ey-pW-cML" firstAttribute="top" secondItem="8ga-EM-bs9" secondAttribute="bottom" constant="26" id="ZqB-lS-CYE"/>
                             <constraint firstAttribute="leadingMargin" secondItem="0NX-vp-x2I" secondAttribute="leading" id="bcY-f3-PgK"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="new-t4-Gbz" secondAttribute="leading" id="inU-hS-Dv2"/>
                             <constraint firstItem="1Jo-K7-lkR" firstAttribute="top" secondItem="rzV-0r-IhJ" secondAttribute="bottom" constant="250" id="ncw-tU-CU3"/>
                             <constraint firstItem="0NX-vp-x2I" firstAttribute="top" secondItem="rzV-0r-IhJ" secondAttribute="bottom" constant="20" id="swh-wm-dgj"/>
                             <constraint firstItem="8ga-EM-bs9" firstAttribute="top" secondItem="0Y6-DR-77s" secondAttribute="bottom" constant="24" id="v8C-zo-HF6"/>
@@ -127,13 +98,11 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="v8C-zo-HF6"/>
-                                <exclude reference="ZqB-lS-CYE"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="addArtistTextField" destination="8ga-EM-bs9" id="BQh-Or-vRO"/>
-                        <outlet property="addLinkTextField" destination="1Ey-pW-cML" id="kfm-Wa-R4X"/>
                         <outlet property="addSongButton" destination="1Jo-K7-lkR" id="aLH-SQ-Rzw"/>
                         <outlet property="addSongTextField" destination="0Y6-DR-77s" id="d3j-bQ-dcq"/>
                         <segue destination="b1t-Ls-E1c" kind="unwind" identifier="afterAddSegue" unwindAction="unwindSegue:" id="FYc-MD-G2t"/>
@@ -147,7 +116,7 @@
         <!--Edit Song View Controller-->
         <scene sceneID="KYy-Nd-0xb">
             <objects>
-                <viewController id="rQW-az-rhJ" customClass="EditSongViewController" customModule="beatkeep" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rQW-az-rhJ" customClass="EditSongViewController" customModule="Vaux" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BCk-ac-9VS"/>
                         <viewControllerLayoutGuide type="bottom" id="Njf-BQ-J7e"/>
@@ -160,15 +129,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="73" id="OiO-FX-N8w"/>
                                     <constraint firstAttribute="height" constant="29" id="kM3-nu-aTR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LINK     :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqW-6t-LO9">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="4F2-KB-Ler"/>
-                                    <constraint firstAttribute="width" constant="73" id="RiY-5q-FSC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -198,36 +158,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EDIT LINK :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtJ-Ed-wgV">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="111" id="Tvc-dx-usP"/>
-                                    <constraint firstAttribute="height" constant="29" id="fbm-hf-XvT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="LINK" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gba-EI-ATd">
-                                <color key="tintColor" red="0.88235294119999996" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="215" id="Uha-R5-5vv"/>
-                                    <constraint firstAttribute="height" constant="23" id="pAC-GX-RMA"/>
-                                </constraints>
-                                <color key="textColor" red="0.88235294117647056" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
-                                        <color key="value" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="0.40024038461538469" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzT-d2-tVh">
-                                <color key="onTintColor" red="0.88235294119999996" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="editLinkSwitchOption:" destination="rQW-az-rhJ" eventType="valueChanged" id="XZl-hv-Eib"/>
-                                </connections>
-                            </switch>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ARTIST NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZ7-Fa-ben">
                                 <color key="tintColor" red="0.88235294119999996" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -259,48 +189,32 @@
                         </subviews>
                         <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="OtJ-Ed-wgV" secondAttribute="leading" constant="-1" id="2I8-71-aj1"/>
                             <constraint firstAttribute="leadingMargin" secondItem="u5y-ke-HqF" secondAttribute="leading" constant="-1" id="2NS-kL-LPW"/>
-                            <constraint firstItem="gba-EI-ATd" firstAttribute="top" secondItem="UZ7-Fa-ben" secondAttribute="bottom" constant="25" id="59S-Vm-Vw9"/>
                             <constraint firstItem="UZ7-Fa-ben" firstAttribute="leading" secondItem="fAO-Vi-Uqc" secondAttribute="trailing" constant="16" id="5Ow-Vh-Iin"/>
                             <constraint firstItem="UZ7-Fa-ben" firstAttribute="top" secondItem="BCk-ac-9VS" secondAttribute="bottom" constant="75" id="8Nv-bV-0gg"/>
-                            <constraint firstItem="gba-EI-ATd" firstAttribute="leading" secondItem="HqW-6t-LO9" secondAttribute="trailing" constant="20" id="9No-qs-EBb"/>
-                            <constraint firstItem="gba-EI-ATd" firstAttribute="leading" secondItem="HqW-6t-LO9" secondAttribute="trailing" constant="20" id="F0E-zZ-zli"/>
-                            <constraint firstItem="HqW-6t-LO9" firstAttribute="top" secondItem="fAO-Vi-Uqc" secondAttribute="bottom" constant="26" id="KDU-43-Pz2"/>
                             <constraint firstItem="YoA-rY-BZZ" firstAttribute="leading" secondItem="u5y-ke-HqF" secondAttribute="trailing" constant="18" id="LhS-4y-KHe"/>
                             <constraint firstItem="tzT-sJ-WdH" firstAttribute="centerX" secondItem="Nql-eZ-Xoi" secondAttribute="centerX" id="Lvi-sz-2QF"/>
                             <constraint firstItem="u5y-ke-HqF" firstAttribute="top" secondItem="BCk-ac-9VS" secondAttribute="bottom" constant="70" id="NPs-aG-ITY"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="HqW-6t-LO9" secondAttribute="leading" constant="-1" id="QVK-cR-sF6"/>
                             <constraint firstItem="tzT-sJ-WdH" firstAttribute="top" secondItem="BCk-ac-9VS" secondAttribute="bottom" constant="250" id="TRD-ej-FJa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fzT-d2-tVh" secondAttribute="trailing" constant="-1" id="aIG-cS-ulq"/>
-                            <constraint firstItem="gba-EI-ATd" firstAttribute="top" secondItem="BCk-ac-9VS" secondAttribute="bottom" constant="133" id="bj4-Er-8wp"/>
                             <constraint firstItem="UZ7-Fa-ben" firstAttribute="top" secondItem="YoA-rY-BZZ" secondAttribute="bottom" constant="25" id="hmq-v4-iCF"/>
-                            <constraint firstItem="fzT-d2-tVh" firstAttribute="top" secondItem="BCk-ac-9VS" secondAttribute="bottom" constant="185" id="i90-Nb-R1C"/>
                             <constraint firstItem="YoA-rY-BZZ" firstAttribute="top" secondItem="BCk-ac-9VS" secondAttribute="bottom" constant="20" id="j7s-eG-aHw"/>
                             <constraint firstItem="YoA-rY-BZZ" firstAttribute="leading" secondItem="u5y-ke-HqF" secondAttribute="trailing" constant="18" id="jEk-oz-7cJ"/>
                             <constraint firstItem="fAO-Vi-Uqc" firstAttribute="top" secondItem="u5y-ke-HqF" secondAttribute="bottom" constant="26" id="kem-2v-gYs"/>
                             <constraint firstAttribute="leadingMargin" secondItem="fAO-Vi-Uqc" secondAttribute="leading" id="mmF-XI-zBp"/>
                             <constraint firstItem="u5y-ke-HqF" firstAttribute="top" secondItem="BCk-ac-9VS" secondAttribute="bottom" constant="20" id="oC9-K9-2ux"/>
-                            <constraint firstItem="OtJ-Ed-wgV" firstAttribute="top" secondItem="HqW-6t-LO9" secondAttribute="bottom" constant="26" id="qXr-bb-rX4"/>
-                            <constraint firstItem="gba-EI-ATd" firstAttribute="leading" secondItem="HqW-6t-LO9" secondAttribute="trailing" constant="18" id="ufE-Vz-qKa"/>
                             <constraint firstItem="UZ7-Fa-ben" firstAttribute="leading" secondItem="fAO-Vi-Uqc" secondAttribute="trailing" constant="16" id="xRi-GJ-adR"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="NPs-aG-ITY"/>
-                                <exclude reference="jEk-oz-7cJ"/>
                                 <exclude reference="hmq-v4-iCF"/>
                                 <exclude reference="xRi-GJ-adR"/>
-                                <exclude reference="59S-Vm-Vw9"/>
-                                <exclude reference="9No-qs-EBb"/>
-                                <exclude reference="F0E-zZ-zli"/>
+                                <exclude reference="jEk-oz-7cJ"/>
+                                <exclude reference="NPs-aG-ITY"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="editLinkSwitch" destination="fzT-d2-tVh" id="z5U-P1-glJ"/>
                         <outlet property="editedArtist" destination="UZ7-Fa-ben" id="jXz-hq-8JV"/>
-                        <outlet property="editedLink" destination="gba-EI-ATd" id="MSD-vX-DEu"/>
                         <outlet property="editedSong" destination="YoA-rY-BZZ" id="ioZ-P3-CK8"/>
                         <segue destination="Rbk-rp-NOf" kind="unwind" identifier="returnToSongsSegue" unwindAction="unwindSegue:" id="RjL-gg-80c"/>
                     </connections>
@@ -313,7 +227,7 @@
         <!--Main Screen View Controller-->
         <scene sceneID="RaD-8x-teo">
             <objects>
-                <viewController id="eTa-qz-P3V" customClass="MainScreenViewController" customModule="beatkeep" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eTa-qz-P3V" customClass="MainScreenViewController" customModule="Vaux" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ukw-Qi-kxN"/>
                         <viewControllerLayoutGuide type="bottom" id="2Pd-UW-fwg"/>
@@ -327,11 +241,11 @@
                                 <color key="separatorColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="songCell" rowHeight="60" id="wXm-ar-Sbx" customClass="SongsTableViewCell" customModule="beatkeep" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="songCell" rowHeight="60" id="wXm-ar-Sbx" customClass="SongsTableViewCell" customModule="Vaux" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="383" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wXm-ar-Sbx" id="hJX-6F-XQS">
-                                            <frame key="frameInset" width="383" height="59.5"/>
+                                            <frame key="frameInset" width="383" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WICKED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wq-b0-3SW">
@@ -446,7 +360,7 @@
         <!--Web Cell Display-->
         <scene sceneID="ZKv-sJ-aXo">
             <objects>
-                <viewController id="Ud4-2e-Rm8" customClass="WebCellDisplay" customModule="beatkeep" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ud4-2e-Rm8" customClass="WebCellDisplay" customModule="Vaux" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hw7-AG-HwM"/>
                         <viewControllerLayoutGuide type="bottom" id="mGd-JU-8To"/>

@@ -40,7 +40,7 @@ class RealmHelper {
         try! realm.write() {
             songToBeUpdated.songTitle = newSong.songTitle
             songToBeUpdated.songArtist = newSong.songArtist
-            songToBeUpdated.songLink = newSong.songLink
+//            songToBeUpdated.songLink = newSong.songLink
             songToBeUpdated.songDateUplaod = newSong.songDateUplaod
         }
     }

@@ -20,35 +20,29 @@ class AddSong: UIViewController, UITextFieldDelegate {
     @IBAction func addSongActionHandler(_ sender: AnyObject) {
         
         if (addSongTextField.text != "") && (addSongTextField.text != " ") && (addSongTextField.text != "   ") && (addSongTextField.text != "    ") {
-            
-            let urlForCheckSavingMode = addLinkTextField.text
-        
-            if ((urlForCheckSavingMode!.containsIgnoringCase(" ")) || (urlForCheckSavingMode!.containsIgnoringCase("  ")) || (urlForCheckSavingMode!.containsIgnoringCase("   ")) == true ){
-                displayAlert("ERROR", message: "Invalid Link")
-                return
-                
-            } else {
+
                 
                 if let song = song {
                     let newSong = SongObject()
                     newSong.songTitle = addSongTextField.text ?? ""
                     newSong.songArtist = addArtistTextField.text ?? ""
-                    newSong.songLink = addLinkTextField.text ?? ""
+//                    newSong.songLink = addLinkTextField.text ?? ""
                     RealmHelper.updateSong(song, newSong: newSong)
                     
                 } else {
                     let song = SongObject()
                     song.songTitle = addSongTextField.text ?? ""
                     song.songArtist = addArtistTextField.text ?? ""
-                    song.songLink = addLinkTextField.text ?? ""
+//                    song.songLink = addLinkTextField.text ?? ""
                     RealmHelper.addSong(song)
                     
                 }
                 performSegue(withIdentifier: "afterAddSegue", sender: self)
-            }
+            
             
         } else {
             displayAlert("ERROR", message: "Song must have a title")
+            return
         }
         
     }
@@ -61,7 +55,7 @@ class AddSong: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+
+
+
 }
-
-
-
