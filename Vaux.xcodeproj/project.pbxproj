@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B8670C28FB8ABF565F618E44 /* Pods_Vaux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268C54590D609D605DB2524A /* Pods_Vaux.framework */; };
 		C0C210AE1DBB310500E8AF71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C210AD1DBB310500E8AF71 /* AppDelegate.swift */; };
-		C0C210B01DBB310500E8AF71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C210AF1DBB310500E8AF71 /* ViewController.swift */; };
 		C0C210C11DBB33EB00E8AF71 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C210BF1DBB33EB00E8AF71 /* Extensions.swift */; };
 		C0C210C21DBB33EB00E8AF71 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C210C01DBB33EB00E8AF71 /* RealmHelper.swift */; };
 		C0C210C41DBB33F800E8AF71 /* EditSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C210C31DBB33F800E8AF71 /* EditSongViewController.swift */; };
@@ -31,7 +30,6 @@
 		B6BB0FB248ADB2B1753F6B38 /* Pods-Vaux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vaux.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vaux/Pods-Vaux.debug.xcconfig"; sourceTree = "<group>"; };
 		C0C210AA1DBB310500E8AF71 /* Vaux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vaux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C210AD1DBB310500E8AF71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0C210AF1DBB310500E8AF71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0C210BF1DBB33EB00E8AF71 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C0C210C01DBB33EB00E8AF71 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		C0C210C31DBB33F800E8AF71 /* EditSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSongViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				C0C210C51DBB340000E8AF71 /* AddSong.swift */,
 				C0C210CB1DBB341F00E8AF71 /* SongsTableViewCell.swift */,
 				C0C210CD1DBB342700E8AF71 /* MainScreenViewController.swift */,
-				C0C210AF1DBB310500E8AF71 /* ViewController.swift */,
 				C0C210CF1DBB343F00E8AF71 /* Main.storyboard */,
 				C0C210D71DBB37C500E8AF71 /* LaunchScreen.storyboard */,
 				C0C210D31DBB36F300E8AF71 /* Assets.xcassets */,
@@ -243,7 +240,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0C210B01DBB310500E8AF71 /* ViewController.swift in Sources */,
 				C0C210CA1DBB341500E8AF71 /* SongObject.swift in Sources */,
 				C0C210C21DBB33EB00E8AF71 /* RealmHelper.swift in Sources */,
 				C0C210CC1DBB341F00E8AF71 /* SongsTableViewCell.swift in Sources */,

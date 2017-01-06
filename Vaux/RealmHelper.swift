@@ -13,12 +13,12 @@ class RealmHelper {
     
     static func retrieveSongs() -> Results<SongObject> {
         let realm = try! Realm()
-        return realm.objects(SongObject).sorted(byProperty: "songTitle", ascending: true)
+        return realm.objects(SongObject.self).sorted(byProperty: "songTitle", ascending: true)
     }
     
     static func retrieveSongsByArtist() -> Results<SongObject> {
         let realm = try! Realm()
-        return realm.objects(SongObject).sorted(byProperty: "songArtist", ascending: true)
+        return realm.objects(SongObject.self).sorted(byProperty: "songArtist", ascending: true)
     }
     
     static func addSong(_ songObject: SongObject) {
@@ -40,9 +40,7 @@ class RealmHelper {
         try! realm.write() {
             songToBeUpdated.songTitle = newSong.songTitle
             songToBeUpdated.songArtist = newSong.songArtist
-//            songToBeUpdated.songLink = newSong.songLink
             songToBeUpdated.songDateUplaod = newSong.songDateUplaod
         }
     }
-
 }

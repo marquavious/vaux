@@ -11,25 +11,19 @@ import UIKit
 extension EditSongViewController {
     
     func displayAlert(_ title: String, message: String){
-        
         let alert: UIAlertController = UIAlertController(title: title, message: message, preferredStyle:UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
             
         }))
-        
         self.present(alert, animated: true, completion: nil)
     }
 }
 
 extension AddSong {
-    
     func displayAlert(_ title: String, message: String){
-        
         let alert: UIAlertController = UIAlertController(title: title, message: message, preferredStyle:UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
-            
         }))
-        
         self.present(alert, animated: true, completion: nil)
     }
 }
@@ -51,9 +45,7 @@ extension MainScreenViewController: UISearchResultsUpdating {
     @available(iOS 8.0, *)
     public func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)
-
     }
-
 }
 
 extension String {

@@ -16,12 +16,10 @@ class EditSongViewController: UIViewController,  UITextFieldDelegate {
     let realm = try! Realm()
     
     @IBOutlet weak var editedSong: UITextField!
-    
     @IBOutlet weak var editedArtist: UITextField!
-    
     @IBOutlet weak var editedLink: UITextField!
-    
     @IBOutlet weak var editLinkSwitch: UISwitch!
+    
     
     @IBAction func editLinkSwitchOption(_ sender: AnyObject) {
         

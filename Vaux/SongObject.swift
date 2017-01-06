@@ -12,7 +12,5 @@ import RealmSwift
 class SongObject: Object {
     dynamic var songTitle: String?
     dynamic var songArtist: String?
-//    dynamic var songLink: String?
     dynamic var songDateUplaod : Date?
-    
 }

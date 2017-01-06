@@ -12,9 +12,7 @@ import RealmSwift
 class MainScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var filteredSongs = [SongObject]()
-    
     let searchController = UISearchController(searchResultsController: nil)
-    
     
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -45,10 +43,6 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
             songs = RealmHelper.retrieveSongs()
             break;
         }
-    }
-    
-    @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
-        
     }
     
     @IBOutlet weak var tableView: UITableView!

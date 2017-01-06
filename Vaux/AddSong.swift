@@ -13,38 +13,35 @@ class AddSong: UIViewController, UITextFieldDelegate {
 
     var song: SongObject?
     
+    var charactersToThrowError = [" "]
+    
     @IBOutlet weak var addSongTextField: UITextField!
     @IBOutlet weak var addArtistTextField: UITextField!
     @IBOutlet weak var addLinkTextField: UITextField!
     @IBOutlet weak var addSongButton: UIButton!
     @IBAction func addSongActionHandler(_ sender: AnyObject) {
-        
-        if (addSongTextField.text != "") && (addSongTextField.text != " ") && (addSongTextField.text != "   ") && (addSongTextField.text != "    ") {
 
-                
+        if (addSongTextField.text != "") && (addSongTextField.text != " ") && (addSongTextField.text != "   ") && (addSongTextField.text != "    ") {
+            
                 if let song = song {
+                    
                     let newSong = SongObject()
                     newSong.songTitle = addSongTextField.text ?? ""
                     newSong.songArtist = addArtistTextField.text ?? ""
-//                    newSong.songLink = addLinkTextField.text ?? ""
                     RealmHelper.updateSong(song, newSong: newSong)
-                    
                 } else {
+                    
                     let song = SongObject()
                     song.songTitle = addSongTextField.text ?? ""
                     song.songArtist = addArtistTextField.text ?? ""
-//                    song.songLink = addLinkTextField.text ?? ""
                     RealmHelper.addSong(song)
-                    
                 }
-                performSegue(withIdentifier: "afterAddSegue", sender: self)
-            
+            navigationController?.popViewController(animated: true);
             
         } else {
             displayAlert("ERROR", message: "Song must have a title")
             return
         }
-        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -55,7 +52,4 @@ class AddSong: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-
-
-
 }
