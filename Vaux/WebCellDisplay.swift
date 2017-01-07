@@ -10,18 +10,23 @@ import UIKit
 import Foundation
 class WebCellDisplay: UIViewController {
     
-    var webLink: SongObject?
+    var songObject: SongObject?
     @IBOutlet weak var webView: UIWebView!
     
     override func viewDidAppear(_ animated: Bool) {
-        let artist = webLink?.songArtist
-        let song = webLink?.songTitle
-        let editedLink = "https://www.youtube.com/results?search_query="+artist!+"+"+song!
-        let editedLinkAgain = editedLink.replace(" ", withString:"+")
-        let url = URL(string: editedLinkAgain)
-        let request = URLRequest(url: url!)
-        webView.loadRequest(request)
-        return
+        // TODO: Check for internet connection here
+        if let songObject = songObject{
+            let artist = songObject.songArtist
+            let song = songObject.songTitle
+            let fullURL = "https://www.youtube.com/results?search_query="+artist!+"+"+song!
+            let finalURL = fullURL.replace(" ", withString:"+")
+            let url = URL(string: finalURL)
+            let request = URLRequest(url: url!)
+            webView.loadRequest(request)
+            // return
+        } else{
+            navigationController?.popViewController(animated: true)
+        }
     }
 }
 
